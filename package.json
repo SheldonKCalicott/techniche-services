@@ -1,0 +1,23 @@
+{
+  "name": "techniche-services",
+  "version": "1.0.0",
+  "description": "Tech-Niche Services - Professional website for operations automation and systems design",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build step required'",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "automation",
+    "systems",
+    "operations",
+    "data-analytics",
+    "workflow-automation"
+  ],
+  "author": "Tech-Niche Services",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
