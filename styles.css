@@ -120,14 +120,15 @@ a:hover {
     background: linear-gradient(135deg, #1a1a1a 0%, #262626 100%);
     padding: 8rem 0 6rem 0;
     margin-top: 80px; /* Account for fixed header */
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    margin-bottom: 4rem;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-headline {
@@ -144,24 +145,26 @@ a:hover {
     line-height: 1.6;
 }
 
+.hero-background-graphic {
+    position: absolute;
+    top: 50%;
+    right: -200px;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 0.1;
+}
+
+.hero-bg-image {
+    width: 600px;
+    height: auto;
+}
+
 .headshot {
     width: 100%;
     max-width: 300px;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-}
-
-.hero-visual {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.hero-graphic {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
 }
 
 /* Services Grid */
@@ -193,16 +196,6 @@ a:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 32px rgba(0,0,0,0.3);
     border-color: #60a5fa;
-}
-
-.service-icon {
-    margin-bottom: 1.5rem;
-}
-
-.service-icon img {
-    width: 48px;
-    height: 48px;
-    filter: brightness(0) saturate(100%) invert(64%) sepia(11%) saturate(1804%) hue-rotate(201deg) brightness(97%) contrast(96%);
 }
 
 .service-card h3 {
@@ -289,14 +282,23 @@ a:hover {
 
 /* About Section */
 .about-content {
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1000px;
 }
 
-.about-content p {
+.about-text p {
     font-size: 1.125rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
     color: #d4d4d8;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
 }
 
 /* Contact Section */
@@ -361,11 +363,10 @@ a:hover {
     .hero {
         padding: 6rem 0 4rem 0;
         margin-top: 120px; /* Account for taller mobile header */
+        text-align: center;
     }
     
     .hero-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
         text-align: center;
     }
     
@@ -377,8 +378,14 @@ a:hover {
         font-size: 1.125rem;
     }
     
-    .hero-graphic {
-        max-width: 400px;
+    .hero-background-graphic {
+        display: none;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
     }
     
     .services-grid {
@@ -409,7 +416,7 @@ a:hover {
     }
     
     .hero-content {
-        gap: 1.5rem;
+        text-align: center;
     }
     
     .hero-headline {
@@ -420,8 +427,8 @@ a:hover {
         font-size: 1rem;
     }
     
-    .hero-graphic {
-        max-width: 300px;
+    .about-content {
+        gap: 1.5rem;
     }
     
     h2 {
