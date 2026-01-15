@@ -168,17 +168,23 @@ a:hover {
 }
 
 /* Services Grid */
+.intro-container {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
 .intro-paragraph {
     font-size: 1.125rem;
     line-height: 1.7;
-    margin-bottom: 3rem;
     color: #d4d4d8;
-    max-width: 800px;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -285,7 +291,7 @@ a:hover {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
     max-width: 1000px;
 }
 
@@ -301,38 +307,268 @@ a:hover {
     justify-content: center;
 }
 
+.headshot {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
 /* Contact Section */
 .contact-content {
-    max-width: 600px;
-    text-align: center;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.contact-content p {
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
-    color: #d4d4d8;
+.contact-intro {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.contact-info {
+.contact-intro p {
+    font-size: 1.25rem;
+    color: #d4d4d8;
+    margin: 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-card {
+    background: #1a1a1a;
     padding: 2rem;
-    background: #262626;
     border-radius: 12px;
     border: 1px solid #404040;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: all 0.2s ease;
 }
 
-.contact-info p {
-    margin: 0;
+.contact-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    border-color: #60a5fa;
+}
+
+.contact-card h3 {
+    color: #f8fafc;
+    margin-bottom: 1rem;
     font-size: 1.125rem;
-    color: #e4e4e7;
 }
 
-/* Footer */
-.footer {
-    background-color: #0f0f0f;
+.contact-card p {
+    color: #a1a1aa;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.contact-cta {
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #60a5fa;
+    color: #1a1a1a;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+    background: #93c5fd;
+    transform: translateY(-1px);
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(96, 165, 250, 0.3);
+}
+
+/* Project Pages */
+.project-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #262626 100%);
+    padding: 8rem 0 4rem 0;
+    margin-top: 80px;
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-header h1 {
+    font-size: 3rem;
+    color: #f8fafc;
+    margin-bottom: 1rem;
+}
+
+.project-subtitle {
+    font-size: 1.25rem;
+    color: #a1a1aa;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.project-image-large {
+    text-align: center;
+}
+
+.project-image-large img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.project-overview h2,
+.project-overview h3 {
+    color: #f8fafc;
+}
+
+.project-overview p,
+.project-overview li {
     color: #d4d4d8;
-    padding: 2rem 0;
+    line-height: 1.6;
+}
+
+.project-overview ul {
+    margin-left: 1rem;
+}
+
+.project-overview li {
+    margin-bottom: 1rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.tech-item {
+    background: #262626;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #404040;
+}
+
+.tech-item h4 {
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+}
+
+.tech-item p {
+    color: #a1a1aa;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.project-results {
+    margin-bottom: 4rem;
+}
+
+.project-results h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f8fafc;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.result-card {
+    background: #262626;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #404040;
+    text-align: center;
+}
+
+.result-card h3 {
+    color: #60a5fa;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.result-card p {
+    color: #a1a1aa;
+    margin: 0;
+}
+
+.workflow-examples {
+    margin-bottom: 4rem;
+}
+
+.workflow-examples h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f8fafc;
+}
+
+.workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.workflow-card {
+    background: #262626;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #404040;
+    transition: all 0.2s ease;
+}
+
+.workflow-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    border-color: #60a5fa;
+}
+
+.workflow-card h3 {
+    color: #f8fafc;
+    margin-bottom: 1rem;
+}
+
+.workflow-card p {
+    color: #a1a1aa;
+    margin: 0;
+}
+
+.project-contact {
+    text-align: center;
+    background: #262626;
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid #404040;
+}
+
+.project-contact h2 {
+    color: #f8fafc;
+    margin-bottom: 1rem;
+}
+
+.project-contact p {
+    color: #d4d4d8;
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+}
     text-align: center;
     border-top: 1px solid #404040;
 }
@@ -389,8 +625,36 @@ a:hover {
     }
     
     .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .contact-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+    
+    .project-details {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .workflow-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-header h1 {
+        font-size: 2.5rem;
     }
     
     .projects-grid {
@@ -431,16 +695,38 @@ a:hover {
         gap: 1.5rem;
     }
     
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .contact-card {
+        padding: 1.5rem;
+    }
+    
+    .project-contact {
+        padding: 2rem;
+    }
+    
+    .project-header h1 {
+        font-size: 2rem;
+    }
+    
+    .results-grid {
+        gap: 1rem;
+    }
+    
     h2 {
         font-size: 1.75rem;
     }
     
     .service-card,
     .project-card {
-        padding: 1.5rem;
-    }
-    
-    .contact-info {
         padding: 1.5rem;
     }
 }
