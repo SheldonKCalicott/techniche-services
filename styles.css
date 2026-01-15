@@ -115,6 +115,42 @@ a:hover {
     text-decoration: none;
 }
 
+/* Dropdown Navigation */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    border: 1px solid #404040;
+    border-radius: 8px;
+    z-index: 1001;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #a1a1aa;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #262626;
+    color: #60a5fa;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #1a1a1a 0%, #262626 100%);
@@ -511,6 +547,63 @@ a:hover {
     margin: 0;
 }
 
+.project-purpose {
+    margin-bottom: 4rem;
+}
+
+.project-purpose h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f8fafc;
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.purpose-card {
+    background: #262626;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #404040;
+    transition: all 0.2s ease;
+}
+
+.purpose-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    border-color: #60a5fa;
+}
+
+.purpose-card h3 {
+    color: #f8fafc;
+    margin-bottom: 1rem;
+}
+
+.purpose-card p {
+    color: #a1a1aa;
+    margin: 0;
+}
+
+.demo-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #60a5fa;
+    color: #1a1a1a;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s ease;
+    margin-top: 1rem;
+}
+
+.demo-link:hover {
+    background: #93c5fd;
+    text-decoration: none;
+}
+
 .workflow-examples {
     margin-bottom: 4rem;
 }
@@ -648,6 +741,11 @@ a:hover {
         gap: 1.5rem;
     }
     
+    .purpose-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
     .workflow-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -718,6 +816,10 @@ a:hover {
     }
     
     .results-grid {
+        gap: 1rem;
+    }
+    
+    .purpose-grid {
         gap: 1rem;
     }
     
