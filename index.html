@@ -14,18 +14,11 @@
                 <h1>Tech-Niche Services</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#what-i-do">What I Do</a></li>
-                <li class="dropdown">
-                    <a href="#projects" class="dropbtn">Projects</a>
-                    <div class="dropdown-content">
-                        <a href="facility-management.html">Facility Management Platform</a>
-                        <a href="operational-dashboards.html">Operational Dashboards</a>
-                        <a href="workflow-automation.html">Workflow Automation</a>
-                    </div>
-                </li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,8 +29,12 @@
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-headline">Clear systems. Reliable automation. Built for real work.</h1>
-                    <p class="hero-subheading">I design and build data-driven tools that organize operations, reduce manual effort, and support teams with dependable automation and software solutions.</p>
+                    <h1 class="hero-headline">Data, Automation & Systems That Actually Work</h1>
+                    <p class="hero-subheading">I turn operational complexity into structured, reliable systems—building automation that supports people and translating messy real-world data into clear signals leaders can act on.</p>
+                    <div class="hero-cta">
+                        <a href="portfolio.html" class="cta-primary">View My Work</a>
+                        <a href="contact.html" class="cta-secondary">Let's Connect</a>
+                    </div>
                 </div>
                 <div class="hero-background-graphic">
                     <img src="images/icons/automation-mindmap.svg" alt="Automation and Systems Background" class="hero-bg-image">
@@ -45,132 +42,96 @@
             </div>
         </section>
 
-        <!-- What I Do Section -->
-        <section id="what-i-do" class="section">
+        <!-- Value Proposition Section -->
+        <section class="section">
             <div class="container">
-                <h2>What I Do</h2>
-                <div class="intro-container">
-                    <p class="intro-paragraph">
-                        I develop applications and automation systems that organize work, streamline processes, and empower teams to operate more effectively. My work focuses on breaking down complex operational challenges into clear, manageable systems designed for real-world use.
-                    </p>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Automation & Workflow Systems</h3>
-                        <p>Designing automated processes that reduce repetitive work, improve consistency, and keep information accurate using tools like Google Sheets, Apps Script, and Python.</p>
+                <h2>What I Bring to Your Operations</h2>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h3>Operational Expertise</h3>
+                        <p>Over a decade operating at the intersection of operations, data, and systems design—from forecasting demand and managing assets to supporting teams and improving financial performance.</p>
                     </div>
-
-                    <div class="service-card">
-                        <h3>Data & Operational Analytics</h3>
-                        <p>Building dashboards and reporting systems that turn operational data into clear insights for planning, forecasting, and performance review.</p>
+                    <div class="value-card">
+                        <h3>Systems Thinking</h3>
+                        <p>I design automation that supports people instead of replacing judgment, building tools grounded in real operational constraints and business logic.</p>
                     </div>
-
-                    <div class="service-card">
-                        <h3>Custom Applications & Internal Tools</h3>
-                        <p>Developing lightweight software and web applications that centralize information, improve communication, and support scalable operations.</p>
+                    <div class="value-card">
+                        <h3>Technical Execution</h3>
+                        <p>From Django SaaS platforms to Google Apps Script automation, I deliver clean, dependable systems using Python, PostgreSQL, and data visualization tools.</p>
                     </div>
-
-                    <div class="service-card">
-                        <h3>System Design & Process Improvement</h3>
-                        <p>Translating operational needs into structured solutions that evolve as teams and responsibilities grow.</p>
+                    <div class="value-card">
+                        <h3>Business Impact</h3>
+                        <p>I translate complex operational challenges into structured solutions—dashboards, workflows, and applications that remove friction and improve clarity.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section section-alternate">
+        <!-- Featured Projects Section -->
+        <section class="section section-alternate">
             <div class="container">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
+                <h2>Recent Work</h2>
+                <div class="featured-projects">
+                    <div class="featured-project">
                         <div class="project-image">
-                            <img src="images/projects/facility-management-platform.png" alt="Facility Management SaaS Platform Interface">
+                            <img src="images/projects/faithful-steward.png" alt="Faithful Steward SaaS Platform">
                         </div>
-                        <h3>Facility Management SaaS Platform</h3>
-                        <p>Comprehensive platform for managing facility operations, maintenance schedules, and resource allocation with real-time reporting and automated workflows.</p>
-                        <div class="project-links">
-                            <a href="facility-management.html" class="project-link">View Project Details</a>
+                        <div class="project-content">
+                            <h3>Faithful Steward — Facilities SaaS</h3>
+                            <p>A facilities-first SaaS platform designed around preventive stewardship, data minimization, and operational trust. Features asset-driven maintenance calendars and role-based access without micromanagement.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                            <a href="portfolio.html#faithful-steward" class="project-link">Learn More</a>
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="featured-project">
                         <div class="project-image">
-                            <img src="images/projects/productivity-dashboard.png" alt="Operational Dashboards Interface">
+                            <img src="images/projects/hr-labor-systems.png" alt="HR & Labor Systems">
                         </div>
-                        <h3>Operational Dashboards and Forecasting Tools</h3>
-                        <p>Data visualization and forecasting systems that transform operational metrics into actionable insights for strategic planning and decision-making.</p>
-                        <div class="project-links">
-                            <a href="operational-dashboards.html" class="project-link">View Project Details</a>
+                        <div class="project-content">
+                            <h3>HR & Labor Systems</h3>
+                            <p>Built multiple internal systems supporting labor forecasting, availability planning, and productivity management, grounded in real operational datasets and automated workflow validation.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Google Apps Script</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Analytics</span>
+                            </div>
+                            <a href="portfolio.html#hr-labor" class="project-link">Learn More</a>
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="featured-project">
                         <div class="project-image">
-                            <img src="images/projects/workflow-automation.png" alt="Workflow Automation Interface">
+                            <img src="images/projects/dishboard.png" alt="Dishboard Digital Cookbook">
                         </div>
-                        <h3>Workflow Automation and Reporting Systems</h3>
-                        <p>Automated processes that eliminate manual data entry, generate consistent reports, and ensure accuracy across operational workflows.</p>
-                        <div class="project-links">
-                            <a href="workflow-automation.html" class="project-link">View Project Details</a>
+                        <div class="project-content">
+                            <h3>Dishboard — Digital Cookbook</h3>
+                            <p>A mobile-first SaaS that converts unstructured recipe URLs into guided, step-based cooking workflows, backed by a shared global recipe library and intelligent parsing.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <a href="portfolio.html#dishboard" class="project-link">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="section">
+        <!-- Call to Action Section -->
+        <section class="section">
             <div class="container">
-                <h2>About</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            My background in operations leadership provided deep insight into the daily challenges teams face—inefficient processes, disconnected systems, and manual work that scales poorly. This experience shaped my transition into software development, analytics, and automation.
-                        </p>
-                        <p>
-                            I approach every project with an emphasis on reliability, attention to detail, and practical system design. The goal is always to create solutions that work consistently, integrate smoothly with existing workflows, and remain maintainable over time.
-                        </p>
-                        <p>
-                            My work is grounded in the understanding that good systems should feel invisible to users while providing the structure and automation teams need to operate effectively.
-                        </p>
-                    </div>
-                    <div class="about-image">
-                        <img src="images/headshot.jpg" alt="Sheldon Calicott - Tech-Niche Services" class="headshot">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section section-alternate">
-            <div class="container">
-                <h2>Let's Work Together</h2>
-                <div class="contact-content">
-                    <div class="contact-intro">
-                        <p>Ready to streamline your operations and automate your workflows? Let's discuss how systematic solutions can transform your business processes.</p>
-                    </div>
-                    
-                    <div class="contact-grid">
-                        <div class="contact-card">
-                            <h3>Email</h3>
-                            <p><a href="mailto:Sheldon@tech-niche-services.com">Sheldon@tech-niche-services.com</a></p>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <h3>Response Time</h3>
-                            <p>I typically respond within 24 hours during business days.</p>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <h3>Project Types</h3>
-                            <p>Automation systems, data analytics, custom applications, and process improvement.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-cta">
-                        <a href="mailto:Sheldon@tech-niche-services.com?subject=Project Inquiry" class="cta-button">Start a Conversation</a>
+                <div class="cta-section">
+                    <h2>Ready to Streamline Your Operations?</h2>
+                    <p>I bring deep operational empathy and technical expertise to every project. Whether you need SaaS development, workflow automation, or data analytics, let's build something reliable together.</p>
+                    <div class="cta-buttons">
+                        <a href="portfolio.html" class="cta-primary">See All Projects</a>
+                        <a href="contact.html" class="cta-secondary">Start a Conversation</a>
                     </div>
                 </div>
             </div>
