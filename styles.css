@@ -70,6 +70,63 @@ a:hover {
     background-color: #262626;
 }
 
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #60a5fa;
+    color: #000;
+    border-color: #60a5fa;
+}
+
+.btn-primary:hover {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #60a5fa;
+    border-color: #60a5fa;
+}
+
+.btn-secondary:hover {
+    background: #60a5fa;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(96, 165, 250, 0.2);
+    text-decoration: none;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #ccc;
+    border-color: #444;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.btn-outline:hover {
+    background: #60a5fa;
+    color: #000;
+    border-color: #60a5fa;
+    text-decoration: none;
+}
+
 /* Header and Navigation */
 .header {
     background-color: #1a1a1a;
@@ -179,17 +236,20 @@ a:hover {
 }
 
 .hero-content {
-    max-width: 800px;
-    text-align: center;
-    position: relative;
-    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
 }
 
 .hero-logo {
-    max-width: 400px;
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin-bottom: 2rem;
+}
+
+.hero-text {
+    text-align: left;
 }
 
 .hero-headline {
@@ -210,8 +270,23 @@ a:hover {
 .hero-cta {
     display: flex;
     gap: 1rem;
-    justify-content: center;
     flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-headline {
+        font-size: 2.5rem;
+    }
 }
 
 .headshot {
