@@ -16,6 +16,43 @@ body {
     background-color: #1a1a1a;
 }
 
+/* Performance Optimizations */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Lazy loading blur-to-sharp effect */
+img[loading="lazy"] {
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"]:not([src]) {
+    opacity: 0;
+}
+
+/* WebP support optimizations */
+picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Preload critical images */
+.hero-logo-container {
+    position: relative;
+}
+
+.hero-logo-container picture {
+    display: block;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
