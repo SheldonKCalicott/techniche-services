@@ -798,7 +798,6 @@ a:hover {
     color: #d4d4d8;
     margin-bottom: 2rem;
     font-size: 1.125rem;
-}
     text-align: center;
     border-top: 1px solid #404040;
 }
@@ -1089,13 +1088,13 @@ a:hover {
 .accomplishment-tools {
     color: #888;
     font-size: 0.8rem;
-    margin: 0.5rem 0;
+    margin: 0.25rem 0;
     line-height: 1.3;
 }
 
 .accomplishment-content .btn {
     align-self: flex-start;
-    margin-top: auto;
+    margin-top: 0.5rem;
     padding: 0.6rem 1.2rem;
     font-size: 0.85rem;
 }
@@ -1544,6 +1543,7 @@ a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top left;
     transition: transform 0.3s ease;
 }
 
@@ -1595,13 +1595,21 @@ a:hover {
 }
 
 .project-meta {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: #1a1a1a;
-    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.project-meta .category {
+    background: #333;
+    color: #60a5fa;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid #444;
+    white-space: nowrap;
 }
 
 .meta-item h4 {
