@@ -1262,6 +1262,24 @@ a:hover {
     margin: 3rem 0;
 }
 
+/* About Page Responsive Layout */
+.about-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    margin: 3rem 0;
+}
+
+.about-main {
+    max-width: none;
+}
+
+.about-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -1271,10 +1289,9 @@ a:hover {
     color: #60a5fa;
     margin-bottom: 1.5rem;
     font-size: 2.2rem;
-    text-align: center;
 }
 
-.about-content h3 {
+.about-content h3, .about-main h3 {
     color: #60a5fa;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
@@ -1286,23 +1303,22 @@ a:hover {
     color: #ccc;
     line-height: 1.7;
     margin-bottom: 2rem;
-    text-align: center;
     font-weight: 500;
 }
 
-.about-content p {
+.about-content p, .about-main p {
     line-height: 1.7;
     margin-bottom: 1.5rem;
     color: #ddd;
 }
 
-.about-content ul {
+.about-list {
     list-style: none;
     padding: 0;
     margin: 2rem 0;
 }
 
-.about-content li {
+.about-list li {
     padding: 0.75rem 0;
     padding-left: 2rem;
     position: relative;
@@ -1311,7 +1327,7 @@ a:hover {
     line-height: 1.6;
 }
 
-.about-content li:before {
+.about-list li:before {
     content: '▸';
     color: #60a5fa;
     position: absolute;
@@ -1319,7 +1335,7 @@ a:hover {
     font-weight: bold;
 }
 
-.about-content li:last-child {
+.about-list li:last-child {
     border-bottom: none;
 }
 
@@ -1331,13 +1347,190 @@ a:hover {
     border-radius: 8px;
 }
 
+/* Sidebar Cards */
+.expertise-card, .tech-card, .personal-card, .philosophy-card {
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+}
+
+.expertise-card:hover, .tech-card:hover, .personal-card:hover {
+    border-color: #60a5fa;
+}
+
+.expertise-card h3, .tech-card h3, .personal-card h3, .philosophy-card h3 {
+    color: #60a5fa;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.expertise-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.expertise-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.expertise-item:last-child {
+    border-bottom: none;
+}
+
+.expertise-item h4 {
+    color: #60a5fa;
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.expertise-item p {
+    color: #aaa;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.tech-categories {
+    display: grid;
+    gap: 1rem;
+}
+
+.tech-category {
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.tech-category:last-child {
+    border-bottom: none;
+}
+
+.tech-category h4 {
+    color: #60a5fa;
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.tech-tags {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.project-highlight {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.project-highlight:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.project-highlight h4 {
+    color: #60a5fa;
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.project-highlight p {
+    margin: 0;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.philosophy-card p {
+    margin: 0;
+    color: #ccc;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Approach Grid */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.approach-step {
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid #333;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.approach-step:hover {
+    border-color: #60a5fa;
+    transform: translateY(-5px);
+}
+
+.step-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.approach-step h3 {
+    color: #60a5fa;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.approach-step p {
+    margin: 0;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .about-sidebar {
+        order: -1;
+    }
+    
+    .expertise-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
-    .about-content h2 {
+    .about-layout {
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .about-content h2, .about-main h2 {
         font-size: 1.8rem;
     }
     
     .lead-text {
         font-size: 1.1rem;
+    }
+    
+    .expertise-card, .tech-card, .personal-card, .philosophy-card {
+        padding: 1.5rem;
+    }
+    
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 2rem 0;
     }
 }
 
