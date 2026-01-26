@@ -1334,7 +1334,7 @@ a:hover {
 
 /* Specific tech-card styling for compactness */
 .tech-card {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .expertise-card:hover, .tech-card:hover, .personal-card:hover {
@@ -1431,6 +1431,10 @@ a:hover {
     color: #aaa;
     font-size: 0.9rem;
     line-height: 1.4;
+}
+
+.philosophy-card {
+    margin-top: 3rem;
 }
 
 .philosophy-card p {
