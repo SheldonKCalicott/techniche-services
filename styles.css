@@ -1334,7 +1334,7 @@ a:hover {
 
 /* Specific tech-card styling for compactness */
 .tech-card {
-    padding: 0.25rem;
+    padding: 0.50rem;
 }
 
 .expertise-card:hover, .tech-card:hover, .personal-card:hover {
