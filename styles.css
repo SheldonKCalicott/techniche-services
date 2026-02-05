@@ -1208,7 +1208,7 @@ a:hover {
 /* Page Hero Styles */
 .page-hero {
     background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-    padding: 6rem 0 4rem 0;
+    padding: 4rem 0 3rem 0;
     margin-top: 80px;
     text-align: center;
     border-bottom: 2px solid #333;
@@ -1226,7 +1226,7 @@ a:hover {
 .page-hero p {
     font-size: 1.2rem;
     color: #ccc;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -1326,7 +1326,7 @@ a:hover {
 /* Sidebar Cards */
 .expertise-card, .tech-card, .personal-card, .philosophy-card {
     background: #2a2a2a;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 12px;
     border: 2px solid #333;
     transition: all 0.3s ease;
@@ -1350,18 +1350,18 @@ a:hover {
 
 .expertise-card h3, .personal-card h3, .philosophy-card h3 {
     color: #60a5fa;
-    margin: 0 0 1.5rem 0;
-    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
     text-align: center;
 }
 
 .expertise-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .expertise-item {
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     border-bottom: 1px solid #333;
 }
 
