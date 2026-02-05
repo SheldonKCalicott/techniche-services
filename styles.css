@@ -1318,7 +1318,7 @@ a:hover {
 .highlight-box {
     background: #2a2a2a;
     border-left: 4px solid #60a5fa;
-    padding: 2rem;
+    padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 8px;
 }
@@ -1448,8 +1448,8 @@ a:hover {
 /* Approach Grid */
 .approach-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
     margin: 3rem 0;
 }
 
