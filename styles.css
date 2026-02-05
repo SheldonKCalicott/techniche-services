@@ -1764,6 +1764,28 @@ a:hover {
     color: #000;
 }
 
+/* Tech Summary (Condensed) */
+.tech-summary {
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.tech-overview {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #cbd5e1;
+    background: #2a2a2a;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 2px solid #333;
+}
+
+.tech-overview strong {
+    color: #60a5fa;
+    font-weight: 600;
+}
+
 /* Process and Solution Cards */
 .solutions-grid {
     display: grid;
@@ -1817,6 +1839,45 @@ a:hover {
     font-weight: bold;
     font-size: 1.2rem;
     margin: 0 auto 1.5rem auto;
+}
+
+/* Process List (Condensed) */
+.process-list {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.process-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: #2a2a2a;
+    border-radius: 12px;
+    border: 2px solid #333;
+    border-left: 4px solid #60a5fa;
+}
+
+.process-item:last-child {
+    margin-bottom: 0;
+}
+
+.process-number {
+    color: #60a5fa;
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-width: 25px;
+    flex-shrink: 0;
+}
+
+.process-content {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.process-content strong {
+    color: #e2e8f0;
 }
 
 .process-step h3 {
