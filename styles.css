@@ -559,6 +559,7 @@ a:hover {
     background: #93c5fd;
     transform: translateY(-1px);
     text-decoration: none;
+    color: #1a1a1a;
     box-shadow: 0 4px 16px rgba(96, 165, 250, 0.3);
 }
 
@@ -1208,7 +1209,7 @@ a:hover {
 /* Page Hero Styles */
 .page-hero {
     background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-    padding: 4rem 0 3rem 0;
+    padding: 3rem 0 2rem 0;
     margin-top: 80px;
     text-align: center;
     border-bottom: 2px solid #333;
@@ -1221,12 +1222,15 @@ a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-hero p {
     font-size: 1.2rem;
     color: #ccc;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -2065,7 +2069,7 @@ a:hover {
 
 .quick-contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin: 2rem 0;
 }
@@ -2082,16 +2086,24 @@ a:hover {
 .quick-contact-card:hover {
     border-color: #60a5fa;
     transform: translateY(-5px);
+    background: #2a2a2a;
 }
 
 .quick-contact-card h3 {
     color: #60a5fa;
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .quick-contact-card p {
     margin-bottom: 2rem;
     line-height: 1.6;
+    color: #e2e8f0;
+}
+
+.quick-contact-card:hover h3,
+.quick-contact-card:hover p {
+    color: inherit;
 }
 
 .availability-section {
