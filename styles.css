@@ -1336,14 +1336,7 @@ a:hover {
     border-color: #60a5fa;
 }
 
-.tech-card h3 {
-    color: #60a5fa;
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
-    text-align: center;
-}
-
-.expertise-card h3, .personal-card h3, .philosophy-card h3 {
+.tech-card h3, .expertise-card h3, .personal-card h3, .philosophy-card h3 {
     color: #60a5fa;
     margin: 0 0 1rem 0;
     font-size: 1.1rem;
@@ -1377,27 +1370,6 @@ a:hover {
     line-height: 1.4;
 }
 
-.tech-categories {
-    display: grid;
-    gap: 0.25rem;
-}
-
-.tech-category {
-    padding: 0.25rem 0;
-    border-bottom: 1px solid #333;
-}
-
-.tech-category:last-child {
-    border-bottom: none;
-}
-
-.tech-category h4 {
-    color: #60a5fa;
-    margin: 0 0 0.1rem 0;
-    font-size: 0.95rem;
-}
-
-.tech-tags {
     color: #ccc;
     font-size: 0.85rem;
     line-height: 1.3;
