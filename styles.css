@@ -1326,15 +1326,10 @@ a:hover {
 /* Sidebar Cards */
 .expertise-card, .tech-card, .personal-card, .philosophy-card {
     background: #2a2a2a;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 12px;
     border: 2px solid #333;
     transition: all 0.3s ease;
-}
-
-/* Specific tech-card styling for compactness */
-.tech-card {
-    padding: 0.50rem;
 }
 
 .expertise-card:hover, .tech-card:hover, .personal-card:hover {
