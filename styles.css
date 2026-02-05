@@ -1343,7 +1343,7 @@ a:hover {
 
 .tech-card h3 {
     color: #60a5fa;
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
     font-size: 1.1rem;
     text-align: center;
 }
@@ -1384,7 +1384,7 @@ a:hover {
 
 .tech-categories {
     display: grid;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
 .tech-category {
