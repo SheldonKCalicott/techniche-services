@@ -1,0 +1,11 @@
+Contact: mailto:security@tech-niche-services.com
+Expires: 2027-02-07T00:00:00.000Z
+Encryption: https://tech-niche-services.com/pgp-key.txt
+Preferred-Languages: en
+Policy: https://tech-niche-services.com/security-policy
+Acknowledgments: https://tech-niche-services.com/security-acknowledgments
+
+# Security Contact Information
+# Please report security vulnerabilities responsibly
+# Response time: Within 48 hours during business days
+# Scope: This covers tech-niche-services.com and related services

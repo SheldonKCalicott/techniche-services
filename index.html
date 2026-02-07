@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.vercel-insights.com https://*.vercel.app /_vercel/; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://via.placeholder.com; connect-src 'self' https://vitals.vercel-insights.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none';">
     <meta name="description" content="Tech-Niche Services - Operations automation, systems design, and data analytics solutions for complex business challenges.">
     <meta name="keywords" content="automation, systems design, data analytics, workflow optimization, business operations, SaaS development">
     <meta name="author" content="Tech-Niche Services">
@@ -12,6 +20,7 @@
     <title>Tech-Niche Services - Clear systems. Reliable automation.</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="security.js"></script>
 </head>
 <body>
     <!-- Navigation Header -->
@@ -162,6 +171,7 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Tech-Niche Services. Systems-focused solutions for operational excellence.</p>
+            <p><a href="privacy.html">Privacy Policy</a> • <a href="/.well-known/security.txt">Security</a></p>
         </div>
     </footer>
 </body>
