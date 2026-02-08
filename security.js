@@ -5,7 +5,7 @@
     // Email Obfuscation - Simple encoding
     function deobfuscateEmail(encoded) {
         // Return the actual email address
-        return 'Sheldon@tech-niche-services.com';
+        return 'contact@tech-niche-services.com';
     }
     
     // Initialize email protection on page load
