@@ -1035,9 +1035,13 @@ a:hover {
 /* Accomplishments Section */
 .accomplishments-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 3rem;
     margin: 3rem 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .accomplishment-card {
@@ -1122,8 +1126,10 @@ a:hover {
 @media (max-width: 768px) {
     .accomplishments-grid {
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
         gap: 2rem;
         margin: 2rem 0;
+        max-width: none;
     }
     
     .accomplishment-card {
@@ -1594,43 +1600,46 @@ a:hover {
     }
 }
 
-/* Portfolio Project Condensed View Foundation */
+/* Portfolio Project Collapse/Expand Functionality */
 .project-description {
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-}
-
-.project-description.condensed {
-    max-height: 100px;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
     overflow: hidden;
-    opacity: 0.8;
 }
 
-.project-description.condensed::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    background: linear-gradient(transparent, #2a2a2a);
-    pointer-events: none;
+.project-description.collapsed {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+}
+
+.project-description.expanded {
+    max-height: 1000px;
+    opacity: 1;
+    margin-top: 1rem;
 }
 
 .project-expand-btn {
     background: none;
     border: 1px solid #60a5fa;
     color: #60a5fa;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 0.9rem;
     margin-top: 1rem;
     transition: all 0.3s ease;
+    font-family: inherit;
 }
 
 .project-expand-btn:hover {
     background: #60a5fa;
-    color: #000;
+    color: #1a1a1a;
+    transform: translateY(-1px);
+}
+
+.project-expand-btn:focus {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
 }
 
 .project-header {
