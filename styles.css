@@ -1976,7 +1976,7 @@ a:hover {
 
 /* Services Pricing Section */
 .pricing-content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -1987,6 +1987,7 @@ a:hover {
 
 .pricing-examples {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 2rem;
     margin: 2rem 0;
 }
@@ -1995,7 +1996,8 @@ a:hover {
     background: #2a2a2a;
     border: 2px solid #333;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 2rem;
+    min-width: 350px;
 }
 
 .pricing-category h4 {
@@ -2010,32 +2012,43 @@ a:hover {
 }
 
 .project-example {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+    padding: 1.5rem;
     background: #1a1a1a;
     border-radius: 6px;
     border-left: 3px solid #60a5fa;
+    min-height: 80px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .project-example strong {
     color: #fff;
     font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.3;
 }
 
 .project-example .price {
     color: #60a5fa;
     font-weight: 600;
     white-space: nowrap;
-    margin-left: auto;
+    font-size: 1rem;
+    align-self: flex-start;
+    margin-top: 0.2rem;
 }
 
 .project-example p {
     color: #ccc;
     font-size: 0.9rem;
-    margin: 0.5rem 0 0 0;
+    margin: 0;
+    line-height: 1.4;
 }
 
 .pricing-notes {
@@ -2071,13 +2084,24 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+    .pricing-content {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .pricing-category {
+        min-width: auto;
+        padding: 1.5rem;
+    }
+    
     .project-example {
-        flex-direction: column;
-        align-items: flex-start;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1.25rem;
     }
     
     .project-example .price {
-        margin-left: 0;
+        align-self: flex-end;
         margin-top: 0.5rem;
     }
 }
