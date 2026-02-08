@@ -1593,6 +1593,40 @@ a:hover {
     margin: 0.5rem 0 0.25rem 0;
 }
 
+/* Section Divider for Portfolio */
+.section-divider {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    padding: 2rem 0;
+    border-top: 2px solid #333;
+    position: relative;
+}
+
+.section-divider::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: #60a5fa;
+}
+
+.section-divider h2 {
+    color: #60a5fa;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.section-subtitle {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 /* Portfolio Project Collapse/Expand Functionality */
 .project-description {
     transition: max-height 0.4s ease, opacity 0.3s ease;
