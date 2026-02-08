@@ -4,10 +4,8 @@
     
     // Email Obfuscation - Simple encoding
     function deobfuscateEmail(encoded) {
-        // Decode the email from the encoded format
-        // This is a simple obfuscation - the actual email is encoded
-        const email = 'Sheldon@tech-niche-services.com';
-        return email;
+        // Return the actual email address
+        return 'Sheldon@tech-niche-services.com';
     }
     
     // Initialize email protection on page load
@@ -17,7 +15,7 @@
             const email = deobfuscateEmail('encoded');
             
             if (element.tagName.toLowerCase() === 'a') {
-                element.href = 'mailto:' + email;
+                element.href = 'mailto:' + email + '?subject=Project Inquiry';
                 element.textContent = email;
             } else {
                 element.textContent = email;
