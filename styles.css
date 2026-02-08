@@ -1537,11 +1537,11 @@ a:hover {
 
 .portfolio-project {
     background: #2a2a2a;
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 12px;
     border: 2px solid #333;
     transition: all 0.3s ease;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .portfolio-project:hover {
@@ -1550,14 +1550,14 @@ a:hover {
 
 .project-layout {
     display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 1rem;
+    grid-template-columns: 220px 1fr;
+    gap: 0.75rem;
     align-items: start;
 }
 
 .project-image {
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
     overflow: hidden;
     border-radius: 8px;
     border: 2px solid #333;
@@ -1579,7 +1579,7 @@ a:hover {
 .project-details {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
 @media (max-width: 768px) {
@@ -1590,14 +1590,22 @@ a:hover {
     
     .project-image {
         width: 100%;
-        height: 220px;
+        height: 180px;
         justify-self: center;
     }
     
     .portfolio-project {
-        padding: 0.75rem;
-        margin-bottom: 1rem;
+        padding: 0.5rem;
+        margin-bottom: 0.75rem;
     }
+}
+
+/* Project Summary (always visible) */
+.project-summary {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0.5rem 0 0.25rem 0;
 }
 
 /* Portfolio Project Collapse/Expand Functionality */
@@ -1622,13 +1630,14 @@ a:hover {
     background: none;
     border: 1px solid #60a5fa;
     color: #60a5fa;
-    padding: 0.4rem 1rem;
-    border-radius: 6px;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 0.85rem;
-    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
     transition: all 0.3s ease;
     font-family: inherit;
+    align-self: flex-start;
 }
 
 .project-expand-btn:hover {
@@ -1644,19 +1653,18 @@ a:hover {
 
 .project-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 0.5rem;
-    flex-wrap: wrap;
-    gap: 0.75rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
 }
     gap: 1rem;
 }
 
 .project-header h3 {
     color: #60a5fa;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin: 0;
+    line-height: 1.2;
 }
 
 .project-status {
@@ -1671,17 +1679,17 @@ a:hover {
 .project-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
-    margin: 1rem 0;
+    gap: 0.4rem;
+    margin: 0;
     align-items: center;
 }
 
 .project-meta .category {
     background: #333;
     color: #60a5fa;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
     border: 1px solid #444;
     white-space: nowrap;
 }
@@ -1702,16 +1710,16 @@ a:hover {
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1rem 0;
+    gap: 0.4rem;
+    margin: 0;
 }
 
 .tech-tag {
     background: #333;
     color: #60a5fa;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
     border: 1px solid #444;
 }
 
