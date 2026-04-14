@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- X-Frame-Options must be set via HTTP header, not meta -->
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.vercel-insights.com https://*.vercel.app /_vercel/; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://via.placeholder.com; connect-src 'self' https://vitals.vercel-insights.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.vercel-insights.com https://*.vercel.app; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://via.placeholder.com; connect-src 'self' https://vitals.vercel-insights.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:;">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="theme-color" content="#60a5fa">
     <title>Contact - Tech-Niche Services</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="/_vercel/insights/script.js"></script>
+    <!-- <script defer src="/_vercel/insights/script.js"></script> -->
     <script defer src="security.js"></script>
 </head>
 <body>
@@ -44,8 +44,8 @@
         <section class="page-hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Let's Build Something Reliable</h1>
-                    <p>Ready to discuss your project, collaboration, or remote opportunity?</p>
+                    <h1>Let's Discover What's Possible</h1>
+                    <p>Every great solution starts with a conversation about the right problem</p>
                 </div>
             </div>
         </section>
@@ -53,55 +53,46 @@
         <!-- Contact Information -->
         <section class="section">
             <div class="container">
-                <div class="contact-layout">
-                    <div class="contact-main">
-                        <h2>Get In Touch</h2>
-                        <p class="contact-intro">I'm always interested in challenging problems that require both technical depth and operational understanding. If you're dealing with complex workflows, data challenges, or systems that need to actually work under pressure, I'd love to hear about it.</p>
+                <div class="contact-main" style="max-width:1700px;margin:0 auto;">
+                    <h2 style="text-align:left;">Get In Touch</h2>
+                    <p class="contact-intro" style="text-align:left;">Tech Niche exists in the space of what's still discoverable — and every project starts with a conversation. If you're facing manual workflows, disconnected data, or a problem that needs a purpose-built solution, I'd love to hear about it.</p>
 
-                        <div class="contact-methods">
-                            <div class="contact-method primary">
-                                <div class="method-icon">📧</div>
+                    <div style="display:flex;gap:2.5rem;align-items:center;justify-content:flex-start;margin:2.5rem 0 2rem 0;flex-wrap:wrap;">
+                        <div style="text-align:center;">
+                            <picture>
+                                <source srcset="images/headshot.webp" type="image/webp">
+                                <img src="images/headshot.jpg" alt="Sheldon Calicott - Tech-Niche Services" style="width:180px;height:180px;border-radius:50%;object-fit:cover;border:3px solid #60a5fa;box-shadow:0 8px 32px rgba(96,165,250,0.2);">
+                            </picture>
+                        </div>
+                        <div style="min-width:820px;max-width:340px;">
+                            <div class="contact-method primary" style="background:#23272f;padding:2rem 1.5rem;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.12);border:2px solid #333;font-size:1.18rem;">
+                                <div class="method-icon" style="font-size:3rem;margin-bottom:0.5rem;">📧</div>
                                 <div class="method-content">
-                                    <h3>Email</h3>
-                                    <p><a href="mailto:contact@tech-niche-services.com?subject=Project%20Inquiry">contact@tech-niche-services.com</a></p>
-                                    <span class="method-note">Primary contact method • Usually respond within 24 hours</span>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-method">
-                                <div class="method-icon">📞</div>
-                                <div class="method-content">
-                                    <h3>Phone or Video Connect</h3>
-                                    <p>Free 30-minute consultation to discuss your needs</p>
-                                    <span class="method-note">Available after initial email contact • EST/EDT timezone</span>
+                                    <h3 style="margin-bottom:0.5rem;font-size:1.4rem;">Email</h3>
+                                    <p style="margin-bottom:0.5rem;font-size:1.2rem;"><a href="mailto:contact@tech-niche-services.com?subject=Project%20Inquiry">Contact@tech-niche-services.com</a></p>
+                                    <span class="method-note" style="font: size 1.1em;rem;color:#a1a1aa;">Primary contact method • Usually respond within 24 hours</span>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="pricing-transparency">
+                    </div>
+
+                    <div class="contact-sections" style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;max-width:1700px;margin:0 auto 2.5rem auto;">
+                        <div class="contact-projects">
                             <h3>Project Examples</h3>
                             <div class="pricing-tiers">
-                                <div class="tier">
-                                    <strong>Google Sheets automation:</strong> $800 - $2,500
-                                </div>
-                                <div class="tier">
-                                    <strong>Dashboard & reporting system:</strong> $1,200 - $4,000
-                                </div>
-                                <div class="tier">
-                                    <strong>Custom internal application:</strong> $3,000 - $12,000
-                                </div>
+                                <div class="tier"><strong>Google Sheets automation:</strong> Custom automation and validation for business workflows</div>
+                                <div class="tier"><strong>Dashboard & reporting system:</strong> Interactive analytics and reporting tailored to your needs</div>
+                                <div class="tier"><strong>Custom internal application:</strong> Bespoke tools and platforms to solve unique operational challenges</div>
                             </div>
-                            <p class="pricing-note">Every project is different • Free consultation to discuss your specific needs • <a href="services.html#pricing">View detailed pricing</a></p>
+                            <p class="pricing-note" style="font-size:0.95rem;color:#a1a1aa;">Every project is unique. I work with clients of all sizes and budgets, and I’m committed to finding the right solution and engagement model for your needs. Let’s connect to discuss what’s possible for your situation.</p>
                         </div>
-
-                        <div class="contact-preferences">
+                        <div class="contact-working">
                             <h3>Working Together</h3>
-                            <ul>
-                                <li><strong>Remote-first:</strong> Experienced with distributed teams and async collaboration</li>
-                                <li><strong>Phone or video calls:</strong> Free 30-minute consultation after initial email contact</li>
-                                <li><strong>Project collaboration:</strong> Regular check-ins via video/email throughout engagement</li>
-                                <li><strong>Response time:</strong> Within 24 hours during business days (EST/EDT)</li>
-                                <li><strong>Availability:</strong> Currently accepting new projects and remote opportunities</li>
+                            <ul style="padding-left:1.2em;">
+                                <li style="margin-bottom:1.2em;"><strong>Remote-first:</strong> Experienced with distributed teams and async collaboration</li>
+                                <li style="margin-bottom:1.2em;"><strong>Project collaboration:</strong> Regular check-ins via email throughout engagement</li>
+                                <li style="margin-bottom:1.2em;"><strong>Response time:</strong> Within 24 hours during business days (EST/EDT)</li>
+                                <li style="margin-bottom:0;"><strong>Availability:</strong> Currently accepting new projects and remote opportunities</li>
                             </ul>
                         </div>
                     </div>
@@ -203,7 +194,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Tech-Niche Services. Systems-focused solutions for operational excellence.</p>
+            <p>&copy; 2026 Tech-Niche Services. Purpose-built data science at the frontier of what's possible.</p>
             <p><a href="privacy.html">Privacy Policy</a> • <a href="/.well-known/security.txt">Security</a></p>
         </div>
     </footer>
