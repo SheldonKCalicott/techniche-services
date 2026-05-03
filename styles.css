@@ -196,7 +196,7 @@ a:hover {
     width: auto;
 }
 
-.nav-brand h1 {
+.nav-brand .nav-title {
     font-size: 1.5rem;
     font-weight: 700;
     color: #f8fafc;
@@ -2537,7 +2537,7 @@ a:hover {
         max-width: 280px;
     }
 
-    .nav-brand h1 {
+    .nav-brand .nav-title {
         font-size: 1.2rem;
     }
 
