@@ -101,7 +101,7 @@ a:hover {
 }
 
 .section {
-    padding: 3rem 0;
+    padding: 2.25rem 0;
 }
 
 .section-alternate {
@@ -1085,8 +1085,8 @@ a:hover {
 .value-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin: 3rem 0;
+    gap: 1.5rem;
+    margin: 2rem 0 0;
 }
 
 @media (max-width: 1024px) {
@@ -1103,10 +1103,10 @@ a:hover {
 
 .value-card {
     background: #2a2a2a;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     border-left: 4px solid #60a5fa;
-    min-height: 180px;
+    min-height: 160px;
 }
 
 .value-card h3 {
@@ -1121,9 +1121,8 @@ a:hover {
 .accomplishments-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 3rem;
-    margin: 3rem 0;
+    gap: 2rem;
+    margin: 2rem 0 0;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -1135,7 +1134,7 @@ a:hover {
     overflow: hidden;
     border: 2px solid #333;
     transition: all 0.3s ease;
-    height: 500px;
+    height: 440px;
     width: 100%;
 }
 
@@ -1146,7 +1145,7 @@ a:hover {
 }
 
 .accomplishment-image {
-    height: 300px;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -1163,8 +1162,8 @@ a:hover {
 }
 
 .accomplishment-content {
-    padding: 1.5rem;
-    height: 200px;
+    padding: 1.25rem;
+    height: 190px;
     position: relative;
 }
 
@@ -1314,7 +1313,7 @@ a:hover {
 /* Page Hero Styles */
 .page-hero {
     background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-    padding: 2.25rem 0 1.5rem 0;
+    padding: 1.75rem 0 1.25rem 0;
     margin-top: 80px;
     text-align: center;
     border-bottom: 2px solid #333;
@@ -1324,7 +1323,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.65rem;
+    gap: 0.5rem;
     max-width: 760px;
     margin: 0 auto;
 }
@@ -1339,8 +1338,8 @@ a:hover {
 }
 
 .page-hero h1 {
-    font-size: 2.35rem;
-    margin-bottom: 0.35rem;
+    font-size: 2.15rem;
+    margin-bottom: 0.25rem;
     background: linear-gradient(135deg, #ffffff 0%, #60a5fa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1352,7 +1351,7 @@ a:hover {
 }
 
 .page-hero p {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: #ccc;
     max-width: 760px;
     margin: 0 auto;
@@ -1370,8 +1369,8 @@ a:hover {
 .about-layout {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    margin: 3rem 0;
+    gap: 2.5rem;
+    margin: 2rem 0;
 }
 
 .about-main {
@@ -1460,8 +1459,8 @@ a:hover {
 .highlight-box {
     background: #2a2a2a;
     border-left: 4px solid #60a5fa;
-    padding: 1.5rem;
-    margin: 2rem 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
     border-radius: 8px;
 }
 
@@ -1553,13 +1552,13 @@ a:hover {
 .approach-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
-    margin: 3rem 0;
+    gap: 1.25rem;
+    margin: 2rem 0 0;
 }
 
 .approach-step {
     background: #2a2a2a;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 12px;
     border: 2px solid #333;
     text-align: center;
@@ -1664,13 +1663,18 @@ a:hover {
     border-radius: 8px;
     border: 2px solid #333;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top left;
+    object-fit: contain;
+    object-position: center;
+    background: #1a1a1a;
     transition: transform 0.3s ease;
 }
 
@@ -1896,14 +1900,14 @@ a:hover {
 /* Services Page Styles */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin: 3rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0 0;
 }
 
 .service-card {
     background: #2a2a2a;
-    padding: 2.5rem;
+    padding: 1.75rem;
     border-radius: 12px;
     border: 2px solid #333;
     transition: all 0.3s ease;
@@ -2193,16 +2197,16 @@ a:hover {
 
 .pricing-examples {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .pricing-category {
     background: #2a2a2a;
     border: 2px solid #333;
     border-radius: 8px;
-    padding: 2rem;
+    padding: 1.5rem;
     min-width: 350px;
 }
 
@@ -2592,14 +2596,14 @@ a:hover {
 
 .quick-contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0 0;
 }
 
 .quick-contact-card {
     background: #2a2a2a;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
     border: 2px solid #333;
@@ -2635,14 +2639,14 @@ a:hover {
 
 .availability-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0 0;
 }
 
 .availability-card {
     background: #2a2a2a;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     border-left: 4px solid #60a5fa;
 }
@@ -2715,7 +2719,7 @@ a:hover {
 /* Section Alternating Backgrounds */
 .section-alternate {
     background: #2a2a2a;
-    padding: 4rem 0;
+    padding: 2.5rem 0;
 }
 
 /* Additional Responsive Design for New Pages */
